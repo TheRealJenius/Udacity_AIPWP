@@ -1,0 +1,87 @@
+Command Line Arguments:
+     dir = uploaded_images/ 
+    arch = alexnet 
+ dogfile = dognames.txt
+
+Pet Image Label Dictionary has 4 key-value pairs.
+Below are 4 of them:
+ 1 key:                    dog_01.jpeg  label:                        dog
+ 2 key:                  bottle_01.jpg  label:                     bottle
+ 3 key:                   hare_01.jpeg  label:                       hare
+ 4 key:                    dog_02.jpeg  label:                        dog
+
+     MATCH:
+
+                  hare_01.jpeg: 
+Real:                       hare   Classifier:                           hare
+
+ NOT A MATCH:
+
+                   dog_01.jpeg: 
+Real:                        dog   Classifier: malamute, malemute, alaskan malamute
+
+                 bottle_01.jpg: 
+Real:                     bottle   Classifier: backpack, back pack, knapsack, packsack, rucksack, haversack
+
+                   dog_02.jpeg: 
+Real:                        dog   Classifier:   norwegian elkhound, elkhound
+
+# Total Images 4 # Matches: 1 # NOT Matches: 3
+
+     MATCH:
+
+                  hare_01.jpeg: 
+Real:                       hare   Classifier:                           hare  
+PetLabelDog: 0  ClassLabelDog: 0
+
+ NOT A MATCH:
+
+                   dog_01.jpeg: 
+Real:                        dog   Classifier: malamute, malemute, alaskan malamute  
+PetLabelDog: 1  ClassLabelDog: 1
+
+                 bottle_01.jpg: 
+Real:                     bottle   Classifier: backpack, back pack, knapsack, packsack, rucksack, haversack  
+PetLabelDog: 0  ClassLabelDog: 0
+
+                   dog_02.jpeg: 
+Real:                        dog   Classifier:   norwegian elkhound, elkhound  
+PetLabelDog: 1  ClassLabelDog: 1
+
+# Total Images 4 # Matches: 1 # NOT Matches: 3
+
+ ** Statistics from calculates_results_stats() function:
+N Images:  4  N Dog Images:  2  N NotDog Images:  2 
+Pct Corr dog:  50.0 Pct Corr NOTdog: 100.0  Pct Corr Breed:   0.0
+
+ ** Check Statistics - calculated from this function as a check:
+N Images:  4  N Dog Images:  2  N NotDog Images:  2 
+Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed:   0.0
+The model being used is the "alexnet" model
+Number of Images = 4  
+Number of Dog Images = 2 
+Number of NOT Dog Images = 2
+Number of misclassifed Dogs = 0
+Number of misclassified Dog Breeds = 2
+Percentage of correct Dogs = 50.0% 
+Percentage of correct Breeds = 0.0% 
+Percentage of correct NOT Dog = 100.0% 
+Percentage of correct Matches = 25.0%
+
+** Total Runtime = 0h:0m:0s
+
+	------------------FINAL RESULTS------------------
+CNN Model Architecture:		Alexnet	Resnet	VGG
+Number of Images			40	40	40
+Number of Dog Images		30	30	30
+Number of NOT Dog Images		10	9	10
+Number of misclassifed Dogs		0	1	0
+Number of misclassified Dog Breeds	6	3	2
+Percentage of correct Dogs		75.0%	75.0%	75.0%
+Percentage of correct Breeds		60.0%	67.5%	70.0%
+Percentage of correct NOT Dog		100.0%	90.0%	100.0%
+Percentage of correct Matches		75.0%	82.5%	87.5%
+
+Total Runtime			00:00:03	00:00:06	00:00:33
+
+Best model = VGG
